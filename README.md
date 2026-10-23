@@ -85,3 +85,22 @@ exclude ingredients from matching.
 - Browsing all recipes is clearly separate from strict suggestions.
 - Recipe details show all requirements and preparation instructions.
 - The saved default unit is applied to new ingredients.
+
+## Manual Testing - Android 10 (API 29)
+
+The application was manually tested using 
+the Android Studio Emulator.
+
+The following functionality was verified:
+- Creating and displaying pantry ingredients.
+- Updating existing ingredient quantities.
+- Deleting pantry ingredients.
+- Input Validation.
+- Strict recipe matching.
+- Displaying recipe details.
+- Navigation between application screens.
+- Saving Application settings.
+- SQLite data persistence after reopening.
+
+Screenshots of the tested application screens are
+included in the assignment report.
