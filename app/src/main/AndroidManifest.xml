@@ -11,6 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPantryManager">
+        <!-- Internal screen for adding and editing pantry records. -->
+        <activity
+            android:name=".IngredientActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Recipe browsing and strict suggestions. -->
+        <activity
+            android:name=".RecipesActivity"
+            android:exported="false" />
+
+        <!-- Displays ingredients and instructions for an Intent-selected recipe. -->
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+
+        <!-- Saves preferences used by the ingredient entry screen. -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
