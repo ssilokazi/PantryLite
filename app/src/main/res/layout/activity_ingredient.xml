@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Scrollable form remains usable when the keyboard is open. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add ingredient"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#173D2A" />
+
+        <EditText
+            android:id="@+id/editIngredientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:minHeight="56dp"
+            android:hint="Ingredient name, e.g. tomato"
+            android:inputType="textCapSentences"
+            android:maxLength="80"
+            android:textColor="#173D2A"
+            android:textColorHint="#58655B" />
+
+        <EditText
+            android:id="@+id/editQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="Quantity, e.g. 2 or 0.5"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:textColor="#173D2A"
+            android:textColorHint="#58655B" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Unit"
+            android:textSize="16sp"
+            android:textColor="#173D2A" />
+
+        <Spinner
+            android:id="@+id/spinnerUnit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+        <EditText
+            android:id="@+id/editExpiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="Expiry date: yyyy-MM-dd (optional)"
+            android:inputType="date"
+            android:maxLength="10"
+            android:textColor="#173D2A"
+            android:textColorHint="#58655B" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Use specific names such as cooked rice or cooked pasta when appropriate. Weight and volume are not interchangeable."
+            android:textSize="14sp"
+            android:textColor="#46564A" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Save ingredient"
+            android:backgroundTint="#245C40"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
